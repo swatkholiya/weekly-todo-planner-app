@@ -1,0 +1,137 @@
+.weeklyCalendarWrapper {
+    color: #545454;
+
+    .monthDropdownWrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .monthName {
+            padding: 24px 0 24px 160px;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-size: 24px;
+            text-decoration: underline;
+        }
+        
+        .monthDropdown {
+            padding: 24px 160px 24px 0;
+            select {
+               font-size: 16px;
+                height: 32px;
+                width: 100px;          
+            }            
+        }
+    }
+
+    .weekDateWrapper {
+        padding: 24px; 
+        padding-top: 12px;  
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        border-bottom: 1px solid #545454;
+    
+        .navButton {
+            font-size: 30px;
+            flex: 0.1;
+            color: blue;
+    
+            &.next {
+                justify-content: flex-end;
+                display: flex;
+            }
+        }
+    
+       .dateContainer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            flex: 0.9;
+    
+            .week-day-wrapper{
+    
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                .weekName {
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-size: 24px;
+                }
+
+                .weekDay {
+                }
+    
+                .active {
+                    text-decoration: underline;
+                    text-decoration-color: blue;
+                    border-radius: 10px;
+                    padding: 3px;
+                }
+
+                .selectedDate {
+                    border: 1px solid green;
+                    border-radius: 10px;
+                    padding: 3px;
+                }
+            }
+           
+    
+       }
+    }
+
+    .toDoListContainer{
+        padding: 0 24px;
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            margin: 24px 0px;
+
+            .title {
+                text-transform: uppercase;     
+                font-size: 24px;  
+                text-decoration: underline;     
+            }
+
+            .toDoActions {
+                display: flex;
+                flex-direction: row;
+                .create-button {
+                    color: green;
+                    font-size: 500;
+                }
+
+                .delete-button {
+                    padding-left: 20px;
+                    color: red;
+                    font-size: 500;
+                }
+            }
+    
+           
+        }
+
+        .toDoInputBoxWrapper{
+            display: flex;  
+            margin-bottom: 24px;
+            height: 32px;
+            .toDoInputBox {
+                flex: 0.2;        
+            }
+        }
+       
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            .toDoItem {
+                padding: 5px;
+                font-size: 14px;
+            }
+        }
+       
+    }
+}
